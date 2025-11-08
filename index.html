@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Tazasoile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>KazakhLingo 🦅</h1>
+
+    <!-- Регистрация -->
+    <section id="register">
+      <input id="username" placeholder="Есіміңізді енгізіңіз">
+      <button onclick="register()">Бастау</button>
+    </section>
+
+    <!-- Уроки -->
+    <section id="lesson" class="hidden">
+      <h2>Сабақ</h2>
+      <div id="lessonCard"></div>
+      <input id="speechInput" placeholder="Айтыңыз..." />
+      <button onclick="checkPronunciation()">Тексеру</button>
+      <button onclick="nextLesson()">Келесі сабақ</button>
+      <p>Ұпай: <span id="score">0</span></p>
+      <p>Марапат: <span id="badges">0</span></p>
+    </section>
+
+    <!-- Рейтинг -->
+    <section id="leaderboard" class="hidden">
+      <h2>Рейтинг</h2>
+      <ul id="ratingList"></ul>
+    </section>
+  </div>
+
+  <script type="module" src="firebase.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
