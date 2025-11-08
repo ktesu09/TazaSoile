@@ -1,0 +1,34 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom, #00a8e8, #f5f9fa);
+  text-align: center;
+  padding: 20px;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+button {
+  background: #00a8e8;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover { background: #007fb3; }
+.hidden { display: none; }
+#lessonCard { 
+  background: #e9f8ff; 
+  padding: 15px; 
+  margin: 10px 0; 
+  border-radius: 8px; 
+}
+ul { list-style: none; padding: 0; }
